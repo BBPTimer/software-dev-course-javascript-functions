@@ -77,7 +77,6 @@ for (let i = 0; i < names.length; i++) {
 function greetUsers(name) {
    console.log(`Welcome, ${name}!`);
 }
-
 greetUsers("Alice");
 greetUsers("Bob");
 greetUsers("Charlie");
@@ -86,20 +85,19 @@ greetUsers("Charlie");
 function sumNumbers(num1, num2) {
    return num1 + num2;
 }
-sum = sumNumbers(num1, num2);
-console.log("The sum of 5 and 10 is " + sum);
+console.log("The sum of 5 and 10 is " + sumNumbers(5, 10));
 
 //Script 3
 function multiplyNumbers(num1, num2) {
    return num1 * num2;
 }
-product = num1 * num2;
-console.log("The product of 5 and 10 is " + product);
+console.log("The product of 5 and 10 is " + multiplyNumbers(5, 10));
 
 //Script 4
 function printNames(names) {
    for (let i = 0; i < names.length; i++) {
       console.log(names[i]);
-  }
+   }
 }
-printNames(names);
+console.log("Names in the list:");
+printNames(["Alice", "Bob", "Charlie"]);
