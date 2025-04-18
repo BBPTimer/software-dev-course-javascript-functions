@@ -58,7 +58,7 @@ console.log(generateAttendeeBadge("Alice", "Speaker"));
 function calculateEventCost(numberOfAttendees, costPerAttendee) {
     totalCost = numberOfAttendees * costPerAttendee;
     if(numberOfAttendees > 100) {
-        totalCost *= 0.9
+        totalCost *= 0.9;
     }
     return totalCost;
 }
@@ -76,6 +76,12 @@ console.log(calculateEventCost(101, 1));
 // 1. Check if the string includes both "@" and ".".
 // 2. Return true or false accordingly.
 
+function isValidEmail(email) {
+    return email.includes("@") && email.includes(".");
+ }
+ console.log(isValidEmail("john.doe@gmail.com"));
+ console.log(isValidEmail("johndoe@gmailcom"));
+ console.log(isValidEmail("johndoegmail.com"));
 
 // ============================================
 // 🧠 Collaborative Steps
